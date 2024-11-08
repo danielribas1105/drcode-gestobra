@@ -13,14 +13,5 @@ export default function Container({ children, className }: ContainerProps) {
       <div className={combinedClasses}>
          {children}
       </div>
-      //<div className="flex flex-col h-screen">
-      //    <Header/>
-      //    <div className="flex flex-grow">
-      //        <MenuAside/>
-      //        <main className="w-max px-12 py-3">
-      //            {children}
-      //        </main>
-      //    </div>
-      //</div>
    )
 }
