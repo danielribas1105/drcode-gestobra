@@ -7,7 +7,7 @@ export interface ContainerProps {
 }
 
 export default function Container({ children, className }: ContainerProps) {
-   const defaultClass = 'w-full mx-auto p-8'
+   const defaultClass = 'flex w-full mx-auto px-16'
    const combinedClasses = twMerge(defaultClass, className)
    return (
       <div className={combinedClasses}>

@@ -1,15 +1,15 @@
-import Aside from "@/components/layout/aside"
 import Container from "@/components/layout/container"
+import Footer from "@/components/ui/footer"
 import Header from "@/components/ui/header"
 
-export default function Layout({ children }: any) {
+export default function PagesLayout({ children }: any) {
    return (
       <>
          <Header />
-         <Container className="flex gap-5">
+         <Container className="flex-col md:flex-row mt-5">
             {children}
-            <Aside />
          </Container>
+         <Footer />
       </>
    )
 }
