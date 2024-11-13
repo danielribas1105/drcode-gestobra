@@ -1,17 +1,16 @@
-import CardObra from "../models/card-obra"
-
-const arrayConstructions = [
-   { name: 'Barra', code: '1234', ativa: true },
-   { name: 'Recreio', code: '4832', ativa: false },
-   { name: 'Penha', code: '0098', ativa: true },
-   { name: 'Olaria', code: '9823', ativa: true }
-]
+'use client'
+import UseObras from "@/data/hooks/useObras"
+import Obra from "@/data/models/Obra"
+import CardObra from "./card-obra"
 
 export default function ListObras() {
+
+   const { obras } = UseObras()
+
    return (
-      <div className="flex flex-col md:flex-row">
-         {arrayConstructions.map((item, index) => (
-            <CardObra key={index} nome={item.name} codigo={item.code} ativa={item.ativa} />
+      <div className="flex flex-col gap-10 md:flex-row md:flex-wrap">
+         {obras.map((obra: Obra) => (
+            <CardObra key={obra.id} obra={obra} />
          ))}
       </div>
    )
