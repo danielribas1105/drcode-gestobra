@@ -1,5 +1,3 @@
-import { IconSquareRoundedPlus } from "@tabler/icons-react"
-import Link from "next/link"
 
 export default function Mapa() {
    return (
