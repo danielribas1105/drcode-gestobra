@@ -1,4 +1,5 @@
 import TituloPages from "@/components/templates/titulo-pages"
+import ListMaquinas from "@/components/maquinas/list-maquinas"
 
 export default function Maquinas() {
    return (
@@ -7,6 +8,7 @@ export default function Maquinas() {
             link={"/maquinas/addMaquina"} 
             titulo={"MÁQUINAS"}
          />
+         <ListMaquinas/>
       </div>
    )
 }
